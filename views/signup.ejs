@@ -1,0 +1,32 @@
+<%- include("partial/header") -%>
+
+<main class="form-signin">
+
+  <form action="/" method="POST">
+    <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+    <div class="form-floating">
+        <input type="text" name="name" class="form-control top" id="floatingInput" placeholder="Name">
+        <label for="floatingInput">Name</label>
+    </div>
+    <div class="form-floating">
+        <input type="tel" name="mobileNumber" class="form-control middle" id="floatingInput" placeholder="Mobile Number">
+        <label for="floatingInput">Mobile Number</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" name="email" class="form-control middle" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" name="password" class="form-control bottom" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <a class="text-muted" href="/login" role="button">Already have an account!</a>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+  </form>
+
+</main>
+
+<%- include("partial/footer") -%>
